@@ -1,53 +1,89 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #F3F5FC; /* color de fondo */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    text-align: center;
+    height: 0;
+    margin: 100px;
+    padding: 10px;
 }
 
 .input-section,
 .output-section {
     width: 50%;
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
 }
 
 .input-section {
-    float: left;
+    width: 70%;
 }
 
 .output-section {
-    float: right;
+    width: 30%; /* Ajustar el ancho de la sección de salida */
 }
 
-h1,h2 {
-    margin-bottom: 10px;
+.input-section textarea {
+    width: 125%; 
+    height: 400px;
 }
 
-textarea {
-    width: calc(100% - 20px);
-    height: 150px;
-    margin-bottom: 10px;
-    padding: 5px;
-    resize: none;
+.output-section textarea {
+    width: 800%; /* El textarea de salida ocupa todo el ancho de la sección */
+    height: 400px; /* Altura más pequeña para un aspecto más rectangular */
 }
 
-button{
-    width: 230px; 
-    height: 47px; 
-    padding: 17px 0;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.container > div {
+    margin: 10px;
+}
+
+.container2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    
+}
+
+.container2 > div {
+    margin: 10px;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los botones */
+}
+
+button {
+    width: 230px;
+    height: 47px;
+    padding: 20px ;
     gap: 8px;
     border-radius: 30px;
-    opacity: 1; 
+    opacity: 1;
     border: none;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
+    margin: auto;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.buttons button {
+    margin: 20px;
+    padding: 20px;
+    justify-content: center;
 }
 
 button#encryptButton {
@@ -57,5 +93,5 @@ button#encryptButton {
 
 button#decryptButton {
     background-color: #D8DFE8;
-    color: black; 
+    color: black;
 }
