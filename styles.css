@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #F3F5FC; /* color de fondo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,3 +38,24 @@ textarea {
     resize: none;
 }
 
+button{
+    width: 230px; 
+    height: 47px; 
+    padding: 17px 0;
+    gap: 8px;
+    border-radius: 30px;
+    opacity: 1; 
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button#encryptButton {
+    background-color: #0A3871;
+    color: white;
+}
+
+button#decryptButton {
+    background-color: #D8DFE8;
+    color: black; 
+}

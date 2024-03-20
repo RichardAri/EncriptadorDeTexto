@@ -13,7 +13,7 @@ function encrypt() {
             outputText += inputText.charAt(i);
         }
     }
-
+    document.getElementById('inputText').value = '';
     document.getElementById('outputText').value = outputText;
 }
 
@@ -34,4 +34,5 @@ function decrypt() {
     }
 
     document.getElementById('outputText').value = outputText;
+    document.getElementById('inputText').value = '';
 }
