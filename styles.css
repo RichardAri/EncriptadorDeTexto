@@ -12,16 +12,28 @@ body {
     text-align: center;
 }
 
+.input-section,
+.output-section {
+    width: 50%;
+}
+
+.input-section {
+    float: left;
+}
+
+.output-section {
+    float: right;
+}
+
+h1,h2 {
+    margin-bottom: 10px;
+}
+
 textarea {
-    width: 300px;
+    width: calc(100% - 20px);
     height: 150px;
-    margin: 10px;
+    margin-bottom: 10px;
     padding: 5px;
     resize: none;
 }
 
-button {
-    margin: 5px;
-    padding: 8px 16px;
-    cursor: pointer;
-}

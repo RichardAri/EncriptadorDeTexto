@@ -9,12 +9,18 @@
 <body>
     <div class="container">
         <h1>Encriptador de Texto</h1>
-        <textarea id="inputText" placeholder="Ingrese el texto aquí"></textarea>
-        <div>
-            <button onclick="encrypt()">Encriptar</button>
-            <button onclick="decrypt()">Desencriptar</button>
+        <div class="input-section">
+            <h2>Ingrese el texto</h2>
+            <textarea id="inputText" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="buttons">
+                <button onclick="encrypt()">Encriptar</button>
+                <button onclick="decrypt()">Desencriptar</button>
+            </div>
         </div>
-        <textarea id="outputText" placeholder="Resultado aquí" readonly></textarea>
+        <div class="output-section">
+            <h2>Resultado</h2>
+            <textarea id="outputText" placeholder="Resultado aquí" readonly></textarea>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
